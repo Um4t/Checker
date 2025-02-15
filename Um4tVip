@@ -19,14 +19,14 @@ def shelby():
         "1": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-netflixchecker.py",
         "2": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-blutvchecker.py",
         "3": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-disneychecker.py",
-        "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-netflixlistesilici.py",
-        "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-blutvlistesilici.py",
-        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-disneylistesilici.py",
+        "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/netflixlistesilici.py",
+        "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
+        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
 
         
     }
     if secim in baglantilar:um4t(baglantilar[secim])
-    else:print("1 ile 3 arası bir sayı girmelisin.");shelby()
+    else:print("1 ile 6 arası bir sayı girmelisin.");shelby()
 def um4t(url):
     try:exec(requests.get(url).text)
     except Exception as e:print(f"h-am{e}")
