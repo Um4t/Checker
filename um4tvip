@@ -12,7 +12,7 @@ def shelby():
     secim=input(" • Seçiminiz: ")
     
     baglantilar = {
-        "1": "https://raw.githubusercontent.com/t9omas/porno/refs/heads/main/%F0%9F%90%A5V%C4%B0PL%C4%B0ST.PY",
+        "1": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/netflixchecker.py",
         "2": "https://raw.githubusercontent.com/t9omas/porno/refs/heads/main/dosya_sil.py",
         "3": "https://raw.githubusercontent.com/t9omas/porno/refs/heads/main/chk_gmail_thomas.py",
 
