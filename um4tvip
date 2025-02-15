@@ -2,7 +2,7 @@ import requests
 
 print(f"""\x1b[38;5;117m  1\x1b[38;5;231m - Checker | \x1b[1;32m Güncel Aktif ✅ 
 \x1b[38;5;117m  2\x1b[38;5;231m - Encoder | \x1b[1;32m Güncel Aktif ✅
-\x1b[38;5;117m  3\x1b[38;5;231m - İnsta Tool  | \x1b[1;32m Güncel Aktif ✅
+\x1b[38;5;117m  3\x1b[38;5;231m - İnsta Tool  | \x1b[1;32m Kapalı ❎
 """)
 
 
@@ -14,7 +14,7 @@ def shelby():
     baglantilar = {
         "1": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/netflixchecker.py",
         "2": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/tgdosyasifreleme.py",
-        "3": "https://raw.githubusercontent.com/t9omas/porno/refs/heads/main/chk_gmail_thomas.py",
+        "3": "kapalı ❎",
 
         
     }
