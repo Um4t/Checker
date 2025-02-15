@@ -25,9 +25,4 @@ def um4t(url):
     except Exception as e:print(f"h-am{e}")
 if __name__=="__main__":shelby()
 
-def temizle_ekran():
-    # İşletim sistemine göre ekranı temizler
-    if platform.system() == "Windows":
-        os.system('cls')
-    else:
-        os.system('clear')
+
