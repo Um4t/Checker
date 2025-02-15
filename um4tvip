@@ -31,4 +31,4 @@ def temizle():
     else:
         os.system("clear")
 
-temizle() 
+temizle()
