@@ -1,9 +1,12 @@
 import requests
+import os
 
 print(f"""\x1b[38;5;117m  1\x1b[38;5;231m - Netflix Checker | \x1b[1;32m Aktif ✅ 
 \x1b[38;5;117m  2\x1b[38;5;231m - BluTv Checker | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  3\x1b[38;5;231m - Encoder  | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  4\x1b[38;5;231m - Disney Checker  | \x1b[1;32m Aktif ✅
+\x1b[38;5;117m  3\x1b[38;5;231m - Disney Checker  | \x1b[1;32m Aktif ✅
+\x1b[38;5;117m  4\x1b[38;5;231m - Netflix List Silici  | \x1b[1;32m Aktif ✅
+\x1b[38;5;117m  5\x1b[38;5;231m - BluTv List Silici  | \x1b[1;32m Aktif ✅
+\x1b[38;5;117m  6\x1b[38;5;231m - Disney List Silici  | \x1b[1;32m Aktif ✅
 """)
 
 
@@ -13,10 +16,12 @@ def shelby():
     secim=input(" • Seçiminiz: ")
     
     baglantilar = {
-        "1": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/encnetflixchecker.py",
-        "2": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/encblutvchecker.py",
-        "3": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/ENCencoder.py",
-        "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-disneychecker.py",
+        "1": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-netflixchecker.py",
+        "2": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-blutvchecker.py",
+        "3": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-disneychecker.py",
+        "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-netflixlistesilici.py",
+        "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-blutvlistesilici.py",
+        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-disneylistesilici.py",
 
         
     }
@@ -26,4 +31,3 @@ def um4t(url):
     try:exec(requests.get(url).text)
     except Exception as e:print(f"h-am{e}")
 if __name__=="__main__":shelby()
-
