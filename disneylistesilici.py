@@ -1,14 +1,14 @@
 import os
 
-# Silinecek dosyanın yolu
-dosya_yolu = "/storage/emulated/0/um4tdisneyhits.txt"  # Dosyanın tam yolunu yazabilirsin: örn. "C:/Users/Kullanici/Desktop/sil.txt"
+dosya_yolu = "/sdcard/um4tdisneyhits.txt"  # Alternatif olarak "/storage/emulated/0/um4tnetflixhits.txt" deneyebilirsin
 
-def dosya_sil():
-    if os.path.exists(dosya_yolu):
+if os.path.exists(dosya_yolu):
+    try:
         os.remove(dosya_yolu)
-        print(f"✅ Başarıyla Dosya silindi.")
-    else:
-        print("❌ Dosya bulunamadı!")
-
-# Çalıştır
-dosya_sil()
+        print(f"✅ {dosya_yolu} başarıyla silindi.")
+    except PermissionError:
+        print("❌ İzin hatası! Dosyayı silmek için izin gerekli.")
+    except Exception as e:
+        print(f"❌ Hata: {e}")
+else:
+    print("❌ Dosya bulunamadı!")
