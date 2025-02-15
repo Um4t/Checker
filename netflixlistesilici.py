@@ -6,7 +6,7 @@ dosya_yolu = "/sdcard/um4tnetflixhits.txt"  # Dosyanın tam yolunu yazabilirsin:
 def dosya_sil():
     if os.path.exists(dosya_yolu):
         os.remove(dosya_yolu)
-        print(f"✅ {dosya_yolu} başarıyla silindi.")
+        print(f"✅ başarıyla silindi.")
     else:
         print("❌ Dosya bulunamadı!")
 
