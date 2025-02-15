@@ -13,7 +13,7 @@ def shelby():
     
     baglantilar = {
         "1": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/encnetflixchecker.py",
-        "2": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/tgdosyasifreleme.py",
+        "2": "https://raw.githubusercontent.com/Um4t/Checker/refs/heads/main/encblutvchecker.py",
         "3": "kapalı ❎",
 
         
