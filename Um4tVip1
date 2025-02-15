@@ -1,5 +1,18 @@
 import requests
 import os
+from cfonts import render, say
+
+UMUT = render('{UM4TVıP}',
+colors=['white', 'blue'], align='center')
+print(f'''\n
+
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓   
+     
+                      {UMUT}
+    ~ Programmer : @Um4tİsAfk ~
+ 
+   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛    
+''')	 
 
 print(f"""\x1b[38;5;117m  1\x1b[38;5;231m - Netflix Checker | \x1b[1;32m Aktif ✅ 
 \x1b[38;5;117m  2\x1b[38;5;231m - BluTv Checker | \x1b[1;32m Aktif ✅
