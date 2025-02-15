@@ -1,0 +1,14 @@
+import os
+
+# Silinecek dosyanın yolu
+dosya_yolu = "/storage/emulated/0/um4tblutvhits.txt"  # Dosyanın tam yolunu yazabilirsin: örn. "C:/Users/Kullanici/Desktop/sil.txt"
+
+def dosya_sil():
+    if os.path.exists(dosya_yolu):
+        os.remove(dosya_yolu)
+        print(f"✅ Başarıyla Dosya silindi.")
+    else:
+        print("❌ Dosya bulunamadı!")
+
+# Çalıştır
+dosya_sil()
