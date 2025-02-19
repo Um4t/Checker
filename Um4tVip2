@@ -20,7 +20,7 @@ print(f"""\x1b[38;5;117m  1\x1b[38;5;231m - Netflix Checker | \x1b[1;32m Aktif �
 \x1b[38;5;117m  4\x1b[38;5;231m - Netflix List Silici  | \x1b[1;32m Aktif ✅
 \x1b[38;5;117m  5\x1b[38;5;231m - BluTv List Silici  | \x1b[1;32m Aktif ✅
 \x1b[38;5;117m  6\x1b[38;5;231m - Disney List Silici  | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  7\x1b[38;5;231m - Encoder  | \x1b[1;32m Kapali ❎
+
 """)
 
 
@@ -35,8 +35,7 @@ def shelby():
         "3": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-disneychecker.py",
         "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/netflixlistesilici.py",
         "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
-        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
-        "7": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENCencoder.py",
+        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py"
 
         
     }
