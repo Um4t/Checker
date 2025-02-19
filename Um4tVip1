@@ -2,7 +2,7 @@ import requests
 import os
 from cfonts import render, say
 
-UMUT = render('{UM4TVıP}',
+UMUT = render('{UM4TVıP1}',
 colors=['white', 'blue'], align='center')
 print(f'''\n
 
