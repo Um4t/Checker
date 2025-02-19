@@ -1,6 +1,6 @@
 import os
 
-dosya_yolu = "/sdcard/um4tblutvhits.txt"  # Alternatif olarak "/storage/emulated/0/um4tnetflixhits.txt" deneyebilirsin
+dosya_yolu = "/sdcard/um4tblutvhits.txt"
 
 if os.path.exists(dosya_yolu):
     try:
