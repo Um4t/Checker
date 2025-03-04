@@ -1,34 +1,45 @@
 import requests
 import os
-from cfonts import render, say
+from cfonts import render
 
-UMUT = render('{UM4TVıP1}',
-colors=['white', 'blue'], align='center')
-print(f'''\n
+# Başlık Tasarımı
+title = render('UM4TVıP1', colors=['white', 'blue'], align='center')
 
-┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓   
-     
-                      {UMUT}
+print(f"""\n
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓   
+      
+                      {title}
     ~ Programmer : @Um4tİsAfk ~
  
-   ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛    
-''')	 
-
-print(f"""\x1b[38;5;117m  1\x1b[38;5;231m - Netflix Checker | \x1b[1;32m Aktif ✅ 
-\x1b[38;5;117m  2\x1b[38;5;231m - BluTv Checker | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  3\x1b[38;5;231m - Disney Checker  | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  4\x1b[38;5;231m - Pubg Checker  | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  5\x1b[38;5;231m - Netflix List Silici  | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  6\x1b[38;5;231m - BluTv List Silici  | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  7\x1b[38;5;231m - Disney List Silici  | \x1b[1;32m Aktif ✅
-\x1b[38;5;117m  8\x1b[38;5;231m - Pubg List Silici  | \x1b[1;32m Aktif ✅
+┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛    
 """)
 
+# Menü Tasarımı
+menu_options = [
+    ("Netflix Checker", "Aktif ✅"),
+    ("BluTV Checker", "Aktif ✅"),
+    ("Disney Checker", "Aktif ✅"),
+    ("Pubg Checker", "Aktif ✅"),
+    ("Netflix List Silici", "Aktif ✅"),
+    ("BluTV List Silici", "Aktif ✅"),
+    ("Disney List Silici", "Aktif ✅"),
+    ("Pubg List Silici", "Aktif ✅")
+]
+
+print("\n\x1b[1;36m╭" + "─" * 62 + " ╮")
+for index, (option, status) in enumerate(menu_options, 1):
+    print(f"\x1b[1;36m│\x1b[1;33m {index} \x1b[1;36m- {option.ljust(46)} | \x1b[1;32m{status} \x1b[1;36m│")
+print("╰" + "─" * 53 + "╯\x1b[0m\n")
 
 def shelby():
-    print("\x1b[1;39m—"*60)
-    secim=input(" • Seçiminiz: ")
+    print("\x1b[1;39m—" * 50)
+    secim = input("\x1b[1;32m • Seçiminiz: \x1b[0m")
     
+    def temizle():
+    	os.system('cls' if os.name == 'nt' else 'clear')
+
+    temizle()
+
     baglantilar = {
         "1": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-netflixchecker.py",
         "2": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-blutvchecker.py",
@@ -38,12 +49,19 @@ def shelby():
         "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
         "7": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
         "8": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/pubglistesilici.py",
-
-        
     }
-    if secim in baglantilar:um4t(baglantilar[secim])
-    else:print("1 ile 8 arası bir sayı girmelisin.");shelby()
+
+    if secim in baglantilar:
+        um4t(baglantilar[secim])
+    else:
+        print("\x1b[1;31m ❌ Hatalı seçim! Lütfen 1 ile 8 arasında bir sayı girin.\x1b[0m\n")
+        shelby()
+
 def um4t(url):
-    try:exec(requests.get(url).text)
-    except Exception as e:print(f"h-am{e}")
-if __name__=="__main__":shelby()
+    try:
+        exec(requests.get(url).text)
+    except Exception as e:
+        print(f"\x1b[1;31m ❌ Hata: {e}\x1b[0m")
+
+if __name__ == "__main__":
+    shelby()
