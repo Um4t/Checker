@@ -16,14 +16,14 @@ print(f"""\n
 
 # Menü Tasarımı
 menu_options = [
-    ("Netflix Checker", "Aktif ✅"),
-    ("BluTV Checker", "Aktif ✅"),
-    ("Disney Checker", "Aktif ✅"),
+    ("Netflix Checker"),
+    ("BluTV Checker"),
+    ("Disney Checker"),
     ("Pubg Checker", "Aktif ✅"),
-    ("Netflix List Silici", "Aktif ✅"),
-    ("BluTV List Silici", "Aktif ✅"),
-    ("Disney List Silici", "Aktif ✅"),
-    ("Pubg List Silici", "Aktif ✅")
+    ("Netflix List Silici"),
+    ("BluTV List Silici"),
+    ("Disney List Silici"),
+    ("Pubg List Silici")
 ]
 
 print("\n\x1b[1;36m╭" + "─" * 62 + " ╮")
