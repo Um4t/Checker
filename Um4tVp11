@@ -14,25 +14,24 @@ print(f"""\n
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛    
 """)
 
-# Menü Tasarımı
 menu_options = [
-    ("Netflix Checker"),
-    ("BluTV Checker"),
-    ("Disney Checker"),
-    ("Pubg Checker"),
-    ("Netflix List Silici"),
-    ("BluTV List Silici"),
-    ("Disney List Silici"),
-    ("Pubg List Silici")
+    "Netflix Checker",
+    "BluTV Checker",
+    "Disney Checker",
+    "Pubg Checker",
+    "Netflix List Silici",
+    "BluTV List Silici",
+    "Disney List Silici",
+    "Pubg List Silici",
 ]
 
 print("\n\x1b[1;36m╭" + "─" * 62 + " ╮")
-for index, (option, status) in enumerate(menu_options, 1):
-    print(f"\x1b[1;36m│\x1b[1;33m {index} \x1b[1;36m- {option.ljust(46)} | \x1b[1;32m{status} \x1b[1;36m│")
+for index, option in enumerate(menu_options, 1):
+    print(f"\x1b[1;36m│\x1b[1;33m {index} \x1b[1;36m- {option.ljust(57)} \x1b[1;36m│")
 print("╰" + "─" * 53 + "╯\x1b[0m\n")
 
 def shelby():
-    print("\x1b[1;39m—" * 50)
+    print("\x1b[1;39m—" * 65)
     secim = input("\x1b[1;32m • Seçiminiz: \x1b[0m")
     
     def temizle():
