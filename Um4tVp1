@@ -19,7 +19,7 @@ menu_options = [
     ("Netflix Checker"),
     ("BluTV Checker"),
     ("Disney Checker"),
-    ("Pubg Checker", "Aktif ✅"),
+    ("Pubg Checker"),
     ("Netflix List Silici"),
     ("BluTV List Silici"),
     ("Disney List Silici"),
