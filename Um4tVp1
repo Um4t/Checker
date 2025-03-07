@@ -37,12 +37,12 @@ def shelby():
     temizle()
 
     baglantilar = {
-        "1": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-capturelinetflixcheckerim.py",
-        "2": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-captureliblutvcheckerim.py",
-        "3": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-capturelidisneycheckerim.py",
-        "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/netflixlistesilici.py",
-        "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
-        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
+    "1": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-capturelinetflixcheckerim%20(1).py",
+    "2": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-captureliblutvcheckerim.py",
+    "3": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-capturelidisneycheckerim.py",
+    "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/netflixlistesilici.py",
+    "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
+    "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
     }
 
     if secim in baglantilar:
