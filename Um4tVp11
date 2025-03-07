@@ -40,14 +40,13 @@ def shelby():
     temizle()
 
     baglantilar = {
-        "1": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-netflixchecker.py",
-        "2": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-blutvchecker.py",
-        "3": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/ENC-disneychecker.py",
-        "4": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/ENC-pubgchecker.py",
+        "1": "",
+        "2": "",
+        "3": "",
+        "4": "",
         "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/netflixlistesilici.py",
         "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
         "7": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
-        "8": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/pubglistesilici.py",
     }
 
     if secim in baglantilar:
