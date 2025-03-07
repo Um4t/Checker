@@ -2,7 +2,6 @@ import requests
 import os
 from cfonts import render
 
-# Başlık Tasarımı
 title = render('UM4TVıP1', colors=['white', 'blue'], align='center')
 
 print(f"""\n
@@ -18,11 +17,9 @@ menu_options = [
     "Netflix Checker",
     "BluTV Checker",
     "Disney Checker",
-    "Pubg Checker",
     "Netflix List Silici",
     "BluTV List Silici",
     "Disney List Silici",
-    "Pubg List Silici",
 ]
 
 print("\n\x1b[1;36m╭" + "─" * 62 + " ╮")
@@ -40,13 +37,12 @@ def shelby():
     temizle()
 
     baglantilar = {
-        "1": "",
-        "2": "",
-        "3": "",
-        "4": "",
-        "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/netflixlistesilici.py",
-        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
-        "7": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
+        "1": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-capturelinetflixcheckerim.py",
+        "2": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-captureliblutvcheckerim.py",
+        "3": "https://raw.githubusercontent.com/Um4t/Um4tVip1/refs/heads/main/UM4TENC-capturelidisneycheckerim.py",
+        "4": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/netflixlistesilici.py",
+        "5": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/blutvlistesilici.py",
+        "6": "https://raw.githubusercontent.com/Um4t/Um4tVip/refs/heads/main/disneylistesilici.py",
     }
 
     if secim in baglantilar:
